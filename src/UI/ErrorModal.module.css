@@ -1,0 +1,19 @@
+.ErrorModal{
+    /* display: hidden; */
+    background-color: white;
+    position: absolute;
+    top : 30%;
+    left: 30%;
+    margin: auto;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 6px;
+    z-index: 201;
+    /* max-width: 95%; */
+}
+.ErrorModal button{
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 5px;
+    align-items: right;
+}
