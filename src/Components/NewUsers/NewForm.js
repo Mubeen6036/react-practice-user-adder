@@ -12,9 +12,12 @@ const NewForm = (props) =>{
     const addUserHandler = (event) =>{
         event.preventDefault();
         const user={
-            name : userName,
-            age : age
+            userName : userName,
+            age : age,
+            key : Math.random()
         };
+        updateUserName('');
+        updateAge('');
         props.addUser(user);
     }
     return(
