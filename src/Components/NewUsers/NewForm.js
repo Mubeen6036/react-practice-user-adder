@@ -21,12 +21,16 @@ const NewForm = (props) =>{
         props.addUser(user);
     }
     return(
-        <form>
-            <label>UserName</label>
-            <input type='text' value={userName} onChange={userNameChangeHandler} />
-            <label>Age</label>
-            <input type='Number' value={age} onChange={ageChangeHandler} min='0' step ='1' max='120'/>
-            <button type='submit' onClick={addUserHandler}>Add User</button>
+        <form className={classes.NewForm}>
+            <div className={classes.NewForm__inputs}>
+                <label>User Name</label>
+                <input type='text' value={userName} onChange={userNameChangeHandler} />
+                <label>Age</label>
+                <input type='Number' value={age} onChange={ageChangeHandler} min='0' step ='1' max='120'/>
+            </div>
+            <div className={classes.NewForm__actions}>
+                <button type='submit' onClick={addUserHandler}>Add User</button>
+            </div>
         </form>
     )
 }

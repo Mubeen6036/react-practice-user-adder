@@ -1,0 +1,36 @@
+.NewForm{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NewForm__inputs{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NewForm__inputs label{
+    margin: 0.2rem;
+    font-weight: bold;
+}
+.NewForm__inputs input{
+    margin: 0.2rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.NewForm__actions{
+    margin: 0.2rem;
+}
+.NewForm__inputs input{
+
+}
+
+.NewForm__actions button{
+    border-radius: 6px;
+    padding: 4px;
+    font-weight: bold;
+}

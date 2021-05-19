@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={classes.App}>
         <NewUsers addUser={addUserHandler}/>
         <Users users={users}/>
     </div>
