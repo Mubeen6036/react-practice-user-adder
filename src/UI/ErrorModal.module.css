@@ -5,15 +5,43 @@
     top : 30%;
     left: 30%;
     margin: auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     width: 50%;
     border-radius: 6px;
     z-index: 201;
     /* max-width: 95%; */
+    box-sizing: content-box;
+    overflow: hidden;
 }
+
+.ErrorModal header{
+    background-color: red;
+    font-weight: bold;
+    box-sizing: content-box;
+    /* border-radius: ; */
+}
+
+.ErrorModal header h2{
+    margin : 0;
+}
+
+.ErrorModal__Content{
+    padding: 5px;
+}
+
+.ErrorModal__actions{
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    margin: 1rem;
+    box-sizing: border-box;
+    /* justify-content: flex-end; */
+}
+
 .ErrorModal button{
     border-radius: 6px;
     font-weight: bold;
     padding: 5px;
-    align-items: right;
+    margin: auto;
+    box-sizing: border-box;
 }
