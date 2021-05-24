@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 import classes from './App.module.css';
 import NewUsers from './Components/NewUsers/NewUsers';
 import Users from './Components/Users/Users';
@@ -43,11 +44,12 @@ function App() {
 
   return (
     <div className={classes.App}>
-        <Backdrop hidden={showError} toggleShowError={toggleErrorHandler}>
+      {ReactDOM.createPortal(
+      <Backdrop hidden={showError} toggleShowError={toggleErrorHandler}>
           <ErrorModal toggleShowError={toggleErrorHandler}>
             {errorMessage}
           </ErrorModal>
-        </Backdrop>
+        </Backdrop>, document.getElementById('error-modal-root'))}
         <NewUsers addUser={addUserHandler}/>
         <Users users={users}/>
     </div>
